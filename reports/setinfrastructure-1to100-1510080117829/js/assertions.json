@@ -1,0 +1,10 @@
+{
+  "simulation": "ngage.keycloak.SetInfrastructure_1To100",
+  "simulationId": "setinfrastructure-1to100",
+  "start": 1510080117829,
+  "description": "",
+  "scenarios": ["set_infrastructure_3", "set_infrastructure_0", "set_infrastructure_4", "set_infrastructure_7", "set_infrastructure_1", "set_infrastructure_5", "set_infrastructure_8", "set_infrastructure_6", "set_infrastructure_2", "set_infrastructure_9"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "simulation": "ngage.keycloak.SetInfrastructure_201To400",
+  "simulationId": "setinfrastructure-201to400",
+  "start": 1510083735709,
+  "description": "",
+  "scenarios": ["set_infrastructure_failed_201To400"],
+  "assertions": [
+
+  ]
+}

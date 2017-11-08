@@ -1,0 +1,100 @@
+RUN	ngage.keycloak.SetInfrastructure_201To400		setinfrastructure-201to400	1510083735709	 	2.0
+USER	set_infrastructure_failed_201To400	1	START	1510083736231	1510083736231
+REQUEST	set_infrastructure_failed_201To400	1		get_admin_token	1510083736267	1510083736558	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_342	1510083736644	1510083742318	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_342_test_client_create	1510083742327	1510083747245	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_342/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_342_test_client_set	1510083747250	1510083755451	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_342_test_user_create	1510083755477	1510083760638	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_342/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_342_test_user_set	1510083760640	1510083766949	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_342_test_user	1510083766952	1510083772149	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_292	1510083772150	1510083777033	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_292_test_client_create	1510083777035	1510083781971	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_292/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_292_test_client_set	1510083781972	1510083790225	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_292_test_user_create	1510083790228	1510083795276	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_292/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_292_test_user_set	1510083795278	1510083801337	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_292_test_user	1510083801338	1510083806347	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_262	1510083806348	1510083811251	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_262_test_client_create	1510083811252	1510083816136	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_262/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_262_test_client_set	1510083816138	1510083824553	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_262_test_user_create	1510083824555	1510083829445	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_262/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_262_test_user_set	1510083829447	1510083835450	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_262_test_user	1510083835452	1510083840654	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_352	1510083840655	1510083845585	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_352_test_client_create	1510083845586	1510083850617	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_352/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_352_test_client_set	1510083850619	1510083859018	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_352_test_user_create	1510083859020	1510083863901	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_352/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_352_test_user_set	1510083863902	1510083870020	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_352_test_user	1510083870021	1510083875288	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_312	1510083875288	1510083880171	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_312_test_client_create	1510083880172	1510083885232	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_312/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_312_test_client_set	1510083885234	1510083893777	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_312_test_user_create	1510083893778	1510083898744	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_312/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_312_test_user_set	1510083898745	1510083904909	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_312_test_user	1510083904910	1510083909885	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_202	1510083909886	1510083914747	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_202_test_client_create	1510083914749	1510083919802	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_202/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_202_test_client_set	1510083919803	1510083927975	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_202_test_user_create	1510083927977	1510083932917	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_202/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_202_test_user_set	1510083932919	1510083939063	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_202_test_user	1510083939064	1510083944206	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_272	1510083944207	1510083949055	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_272_test_client_create	1510083949056	1510083954125	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_272/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_272_test_client_set	1510083954126	1510083962561	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_272_test_user_create	1510083962563	1510083967506	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_272/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_272_test_user_set	1510083967507	1510083973645	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_272_test_user	1510083973646	1510083978701	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_232	1510083978702	1510083983615	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_232_test_client_create	1510083983616	1510083988509	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_232/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_232_test_client_set	1510083988511	1510083996897	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_232_test_user_create	1510083996899	1510084001949	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_232/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_232_test_user_set	1510084001951	1510084008054	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_232_test_user	1510084008055	1510084013047	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_214	1510084013048	1510084017905	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_214_test_client_create	1510084017907	1510084023037	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_214_test_client_set	1510084023040	1510084031153	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_214_test_user_create	1510084031154	1510084036037	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_214/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_214_test_user_set	1510084036039	1510084041971	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_214_test_user	1510084041973	1510084046946	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_345	1510084046947	1510084051912	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_345_test_client_create	1510084051914	1510084056779	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_345/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_345_test_client_set	1510084056781	1510084064946	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_345_test_user_create	1510084064948	1510084069974	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_345/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_345_test_user_set	1510084069976	1510084075957	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_345_test_user	1510084075958	1510084080941	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_253	1510084080942	1510084085982	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_253_test_client_create	1510084085983	1510084090880	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_253/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_253_test_client_set	1510084090881	1510084099007	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_253_test_user_create	1510084099009	1510084103820	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_253/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_253_test_user_set	1510084103821	1510084109904	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_253_test_user	1510084109905	1510084114877	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_323	1510084114878	1510084119718	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_323_test_client_create	1510084119719	1510084124535	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_323/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_323_test_client_set	1510084124536	1510084132844	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_323_test_user_create	1510084132846	1510084137742	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_323/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_323_test_user_set	1510084137743	1510084143778	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_323_test_user	1510084143779	1510084148779	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_354	1510084148780	1510084153860	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_354_test_client_create	1510084153861	1510084158979	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_354_test_client_set	1510084158981	1510084167420	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_354_test_user_create	1510084167422	1510084172240	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_354/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_354_test_user_set	1510084172241	1510084178282	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_354_test_user	1510084178283	1510084183446	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_364	1510084183447	1510084188255	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_364_test_client_create	1510084188256	1510084193156	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_364/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_364_test_client_set	1510084193157	1510084201255	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_364_test_user_create	1510084201257	1510084206140	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_364/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_364_test_user_set	1510084206141	1510084212140	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_364_test_user	1510084212141	1510084217090	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_274	1510084217090	1510084221909	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_274_test_client_create	1510084221910	1510084226987	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_274/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_274_test_client_set	1510084226989	1510084235233	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_274_test_user_create	1510084235234	1510084240116	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_274/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_274_test_user_set	1510084240118	1510084246210	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_274_test_user	1510084246211	1510084251348	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		create_realm_try_test_realm_316	1510084251348	1510084256194	KO	status.find.in(200,304,201,202,203,204,205,206,207,208,209), but actually found 409
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_316_test_client_create	1510084256195	1510084261123	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_316/clients/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		client_try_test_realm_316_test_client_set	1510084261124	1510084269395	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_316_test_user_create	1510084269397	1510084274332	KO	headerRegex((Location,http://10.0.0.27:8080/auth/admin/realms/try_test_realm_316/users/(.*))).find.exists, found nothing
+REQUEST	set_infrastructure_failed_201To400	1		user_try_test_realm_316_test_user_set	1510084274334	1510084280264	OK	 
+REQUEST	set_infrastructure_failed_201To400	1		update_password_try_test_realm_316_test_user	1510084280265	1510084285383	OK	 
+USER	set_infrastructure_failed_201To400	1	END	1510083736231	1510084285385
