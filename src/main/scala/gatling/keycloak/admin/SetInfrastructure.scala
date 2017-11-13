@@ -3,8 +3,9 @@ package gatling.keycloak.admin
 import gatling.keycloak.KeycloakSimulation
 import io.gatling.core.Predef.exec
 import io.gatling.core.Predef.scenario
+import io.gatling.core.structure.ChainBuilder
 
-trait SetInfrastructure extends CreateClient with CreateUser with CreateRealm {
+trait SetInfrastructure extends ClientAccess with CreateUser with CreateRealm {
 	_: KeycloakSimulation =>
 	
 	def setInfrastructure(
@@ -33,21 +34,28 @@ trait SetInfrastructure extends CreateClient with CreateUser with CreateRealm {
 			.exec(getAdminToken())
 			.exec(
 				innerRange.map(iteration => {
-					val realm = getRealmName(iteration)
-					val clientId = getClientID(iteration)
-					val username = getUsername(iteration)
-					val password = getPassword(iteration)
-					exec(createRealm(realm))
-						.exec(
-							exec(createClient(realm, clientId))
-								.exitBlockOnFail(exec(setClientId(realm, clientId)))
-						)
-						.exec(
-							exec(createUser(realm, username))
-								.exitBlockOnFail(exec(setUserId(realm, username)))
-						)
-						.exec(updatePassword(realm, username, password))
+					setRealm(getRealmName(iteration), getClientID(iteration), getUsername(iteration), getPassword(iteration))
 				})
 			)
 	}
+	
+	def setRealm(realm: String, clientId: String, username: String, password: String): ChainBuilder = {
+		exec(createRealm(realm))
+			.exec(setClient(realm, clientId))
+			.exec(setUser(realm, username))
+			.exec(updatePassword(realm, username, password))
+	}
+	
+	def setUser(realm: String, username: String): ChainBuilder = {
+		exec(createUser(realm, username))
+			.exitBlockOnFail(exec(getUserId(realm, username)))
+	}
+	
+	def setClient(realm: String, clientId: String): ChainBuilder = {
+		exec(createClient(realm, clientId))
+			.exitBlockOnFail(exec(getClientId(realm, clientId)))
+	}
+	
+	
+	
 }

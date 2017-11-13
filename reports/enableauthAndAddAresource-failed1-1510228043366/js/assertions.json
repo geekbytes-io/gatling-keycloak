@@ -1,0 +1,10 @@
+{
+  "simulation": "gatling.keycloak.EnableAuth",
+  "simulationId": "enableauth",
+  "start": 1510228043366,
+  "description": "",
+  "scenarios": ["enableAuth"],
+  "assertions": [
+
+  ]
+}

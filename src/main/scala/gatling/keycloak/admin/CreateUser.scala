@@ -17,7 +17,7 @@ trait CreateUser {
   }
 
 
-  def setUserId(realm: String, username: String): HttpRequestBuilder = {
+  def getUserId(realm: String, username: String): HttpRequestBuilder = {
     http(s"user_${realm}_${username}_set")
       .get(s"/auth/admin/realms/$realm/users?first=0&max=20")
       .headers(adminHeaders)
