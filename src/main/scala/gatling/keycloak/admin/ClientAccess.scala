@@ -2,6 +2,7 @@ package gatling.keycloak.admin
 
 import gatling.keycloak.KeycloakSimulation
 import io.gatling.core.Predef._
+import io.gatling.core.structure.ChainBuilder
 import io.gatling.http.Predef._
 import io.gatling.http.request.builder.HttpRequestBuilder
 
@@ -17,7 +18,7 @@ trait ClientAccess {
 
 
   def createClient(realm: String, clientId: String): HttpRequestBuilder = {
-    http(s"client_${realm}_${clientId}_create")
+    http(s"client_create")
       .post(s"/auth/admin/realms/$realm/clients")
       .headers(adminHeaders)
       .body(StringBody(s"""{"enabled":true,"attributes":{},"redirectUris":[],"clientId":"$clientId","rootUrl":"http://10.0.0.27/","protocol":"openid-connect"}"""))
@@ -39,7 +40,12 @@ trait ClientAccess {
       .body(StringBody(s"""{"clientId": "test_client","serviceAccountsEnabled": true,"authorizationServicesEnabled": true}"""))
       .check()
   }
-  
+
+
+  def setClient(realm: String, clientId: String): ChainBuilder = {
+    exec(createClient(realm, clientId))
+      .exitBlockOnFail(exec(getClientId(realm, clientId)))
+  }
   
 
 

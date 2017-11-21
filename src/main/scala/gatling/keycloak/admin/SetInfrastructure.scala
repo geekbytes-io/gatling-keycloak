@@ -1,11 +1,12 @@
 package gatling.keycloak.admin
 
 import gatling.keycloak.KeycloakSimulation
+import io.gatling.commons.validation.Success
 import io.gatling.core.Predef.exec
 import io.gatling.core.Predef.scenario
 import io.gatling.core.structure.ChainBuilder
 
-trait SetInfrastructure extends ClientAccess with CreateUser with CreateRealm {
+trait SetInfrastructure extends ClientAccess with UserAccess with RealmAccess {
 	_: KeycloakSimulation =>
 	
 	def setInfrastructure(
@@ -43,18 +44,12 @@ trait SetInfrastructure extends ClientAccess with CreateUser with CreateRealm {
 		exec(createRealm(realm))
 			.exec(setClient(realm, clientId))
 			.exec(setUser(realm, username))
-			.exec(updatePassword(realm, username, password))
+			.exec(updatePassword(realm,s =>  Success(username), password))
 	}
 	
-	def setUser(realm: String, username: String): ChainBuilder = {
-		exec(createUser(realm, username))
-			.exitBlockOnFail(exec(getUserId(realm, username)))
-	}
+
 	
-	def setClient(realm: String, clientId: String): ChainBuilder = {
-		exec(createClient(realm, clientId))
-			.exitBlockOnFail(exec(getClientId(realm, clientId)))
-	}
+
 	
 	
 	

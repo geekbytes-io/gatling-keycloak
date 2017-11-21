@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
+    <timestamp key="myTimestamp" datePattern="yyyy-MM-dd'_'HH-mm-ss"/>
+
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>../gatling.log</file>
+        <file>./target/gatling/log-${myTimestamp}.log</file>
         <append>true</append>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%-5level] %logger{15} - %msg%n%rEx</pattern>

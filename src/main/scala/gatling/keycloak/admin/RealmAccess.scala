@@ -12,7 +12,7 @@ import io.gatling.http.request.builder.HttpRequestBuilder
 */
 
 
-trait CreateRealm {
+  trait RealmAccess {
   _: KeycloakSimulation =>
 
 
